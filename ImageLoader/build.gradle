@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -30,11 +31,33 @@ android {
     }
 }
 
+//publishing{
+//    publications{
+//        maven(MavenPublication){
+//            groupId "com.github"
+//            artifactId "ImageLoader"
+//            version "1.0"
+//            artifacts("$buildDir/outputs/aar/${project.getName()}-release.aar")
+//        }
+//    }
+//    repositories {
+//        maven {
+//            name "GithubPackages"
+//            url uri("https://maven.pkg.github.com/JrDeveloper100/ImageLoaderLibrary")
+//            credentials{
+//                username = "JrDeveloper100"
+//                password = "abcdefg"
+//            }
+//        }
+//    }
+//}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
