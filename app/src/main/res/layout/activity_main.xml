@@ -12,14 +12,25 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
         android:src="@drawable/placeholder"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginHorizontal="20dp"/>
 
-    <Button
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSelectImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text="Select Image"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/btn_design"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
 
 </LinearLayout>
